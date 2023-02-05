@@ -1,0 +1,49 @@
+.Row {
+  position: relative;
+  .rowWrap {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 200%;
+    left: -775px;
+    .item{
+      margin: 0 75px;
+      font-weight: 500;
+      font-size: 40px;
+      color: #414141;
+      transition: .3s linear;
+      cursor: default;
+      position: relative;
+
+      p {
+        position: relative;
+        z-index: 100;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 5px;
+        height: 10px;
+        background: #33B7BC;
+        clip-path: polygon(103.30% -2px, 5px -2px, -3px 8px, 96.8% 8px);
+        opacity: 0;
+        transition: .3s linear;
+      }
+
+      &:hover {
+        color: #F2F2F2;
+      }
+
+      &.active {
+        &:before {
+          opacity: 1;
+        }
+        color: #F2F2F2;
+      }
+    }
+  }
+
+}

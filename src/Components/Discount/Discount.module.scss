@@ -1,0 +1,112 @@
+.discount {
+  padding: 250px 0;
+  position: relative;
+
+  .discountBg {
+    position: absolute;
+    top: -400px;
+    left: 0;
+    width: 100%;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 1170px;
+    position: relative;
+    padding: 80px 0;
+    margin: 0 auto;
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: #1E1D1E;
+      opacity: 0.2;
+      box-shadow: 0px 14px 44px #0E0E0E, inset 0px 10px 62px #322B32;
+      border-radius: 129px 20px 20px 20px;
+    }
+    .title {
+      font-weight: 400;
+      font-size: 46px;
+      line-height: 36px;
+      text-align: center;
+      color: #FFFFFF;
+      margin-bottom: 25px;
+    }
+
+    .subtitle {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 28px;
+      text-align: center;
+      color: #868686;
+      max-width: 640px;
+      width: 100%;
+      margin: 0 auto 55px;
+    }
+
+    .inputWrap {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 625px;
+      width: 100%;
+      margin: 0 auto;
+
+      input {
+        width: 425px;
+        padding: 23px 30px 23px 65px;
+        background: rgba(43, 40, 43, 0.4);
+        border-radius: 10px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: #fff;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      svg {
+        position: absolute;
+        left: 30px;
+      }
+
+      button {
+        width: 180px;
+        height: 68px;
+        background: #33B7BC;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 17px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+      }
+    }
+
+    .sprite1 {
+      position: absolute;
+      left: -85px;
+      bottom: 0;
+    }
+
+    .sprite2 {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .sprite3 {
+      position: absolute;
+      bottom: -80px;
+      right: -100px;
+    }
+  }
+}
