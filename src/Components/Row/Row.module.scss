@@ -1,5 +1,7 @@
 .Row {
   position: relative;
+  height: 60px;
+  overflow-x: auto;
   .rowWrap {
     position: absolute;
     display: flex;

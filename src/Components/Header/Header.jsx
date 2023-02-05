@@ -16,7 +16,7 @@ function Header({menuStatus, setMenuStatus}) {
         <header className={styles.header}>
                 <div className={styles.headerContent}>
                     <nav className={styles.nav}>
-                        <button className={styles.menuBtn}>
+                        <button onClick={() => setMenuStatus(!menuStatus)} className={menuStatus ? `${styles.menuBtn} ${styles.active}` : styles.menuBtn}>
                             <span className={styles.top}></span>
                             <span className={styles.bottom}></span>
                         </button>

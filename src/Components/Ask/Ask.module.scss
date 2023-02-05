@@ -18,6 +18,8 @@
     .askForm {
       margin-left: 60px;
       max-width: 700px;
+      position: relative;
+      z-index: 100;
       @media screen and (max-width: 1250px) {
         display: block;
         width: calc(100% - 40px);

@@ -17,7 +17,7 @@ function Main() {
     const [menuStatus, setMenuStatus] = React.useState(false);
 
     return (
-        <main className={'main'}>
+        <main className={'main'} style={menuStatus ? {height: '100vh', overflow: 'hidden'} : null}>
             {menuStatus ? <MenuModal/> : null}
             <div className="container">
                 <MainScreen setMenuStatus={setMenuStatus} menuStatus={menuStatus}/>
