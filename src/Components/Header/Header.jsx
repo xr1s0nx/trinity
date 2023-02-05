@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import {NavLink} from "react-router-dom";
 import logo from '../../assets/img/logo.svg';
+import logoMob from '../../assets/img/logoMob.svg';
 
 function Header({menuStatus, setMenuStatus}) {
 
@@ -24,7 +25,8 @@ function Header({menuStatus, setMenuStatus}) {
                         <NavLink className={styles.navItem} to={'/chauffeur-list'}><p>Chauffeur List</p></NavLink>
                     </nav>
                     <NavLink to={'/'} className={styles.logo}>
-                        <img src={logo} alt=""/>
+                        <img className={styles.logoDesk} src={logo} alt=""/>
+                        <img src={logoMob} className={styles.logoMob} alt=""/>
                     </NavLink>
                     <div className={styles.info}>
                         <a href="tel:971585907875" className={styles.tel}>+971 58 590 7875</a>

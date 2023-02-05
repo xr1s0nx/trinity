@@ -1,11 +1,18 @@
 .advantages {
   padding-bottom: 260px;
+  @media screen and (max-width: 850px) {
+    padding-bottom: 70px;
+  }
   .title {
     font-weight: 500;
     font-size: 100px;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 120px;
+    @media screen and (max-width: 850px) {
+      font-size: 40px;
+      margin-bottom: 40px;
+    }
   }
 
   .advWrap {
@@ -13,10 +20,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 500px) {
+      display: none;
+    }
 
     .adv {
       position: relative;
       width: 33.3%;
+      @media screen and (max-width: 1250px){
+        width: 50%;
+      }
+
+      @media screen and (max-width: 850px) {
+        width: 100%;
+      }
 
       img {
         width: 100%;
@@ -53,6 +70,51 @@
         span {
           opacity: 0;
         }
+      }
+    }
+  }
+
+  .advWrapMob {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    border-radius: 10px;
+    padding: 70px 35px;
+    position: relative;
+    display: none;
+
+    @media screen and (max-width: 500px) {
+      display: block;
+    }
+
+    img {
+      width: calc(100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .plus {
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      color: #FFFFFF;
+      margin-bottom: 35px;
+      text-indent: 20px;
+      position: relative;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        width: 11px;
+        height: 11px;
+        background: #FFFFFF;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        border: 2px solid #33B7BC;
+        border-radius: 100%;
       }
     }
   }

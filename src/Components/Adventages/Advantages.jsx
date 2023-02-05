@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Adventages.module.scss';
 import advantages from '../../assets/img/adventages2.jpg';
+import bg from '../../assets/img/advMobBg.svg';
 
 function Advantages() {
 
@@ -26,6 +27,13 @@ function Advantages() {
                     </div>
                     )
                 })}
+            </div>
+            <div className={styles.advWrapMob}>
+                <img src={bg} alt=""/>
+                <p className={styles.plus}><span></span>40+ unique cars for rent from our fleet</p>
+                <p className={styles.plus}><span></span>Delivery and return of cars in Dubai 24/7</p>
+                <p className={styles.plus}><span></span>Insurance without a deductible for each car</p>
+                <p className={styles.plus}><span></span>No video or audio recording in the car</p>
             </div>
         </section>
     );

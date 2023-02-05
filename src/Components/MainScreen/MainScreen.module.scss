@@ -5,12 +5,22 @@
   background-size: cover;
   min-height: 1080px;
   position: relative;
+  @media screen and (max-width: 850px){
+    min-height: 0;
+    height: 100vh;
+  }
   .title {
     font-weight: 500;
     font-size: 120px;
     text-align: center;
     color: #FFFFFF;
     margin-top: 306px;
+    @media screen and (max-width: 1250px) {
+      margin-top: 195px;
+    }
+    @media screen and (max-width: 850px){
+      font-size: 60px;
+    }
   }
   .subtitle {
     font-weight: 400;
@@ -19,6 +29,10 @@
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media screen and (max-width: 850px){
+      font-size: 17px;
+      line-height: 25px;
+    }
   }
   .socialLinks {
     width: 128px;
@@ -28,6 +42,11 @@
     position: absolute;
     bottom: 60px;
     right: 60px;
+
+    @media screen and (max-width: 850px){
+      bottom: 20px;
+      right: 20px;
+    }
 
     .link {
       height: 54px;

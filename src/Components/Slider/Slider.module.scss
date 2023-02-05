@@ -1,11 +1,24 @@
 .slider {
   padding: 180px 0;
-
+    @media screen and (max-width: 1250px){
+      display: none;
+    }
 
   .sliderWrap {
     .imageSlider {
       max-width: 1100px;
       max-height: 860px;
+
+      @media screen and (max-width: 1700px) {
+        min-width: 900px;
+        border-radius: 0px 20px 20px 0px;
+        overflow: hidden;
+      }
+
+      @media screen and (max-width: 1350px) {
+        min-width: 640px;
+        margin-top: 150px;
+      }
     }
     display: flex;
     align-items: flex-start;
@@ -134,7 +147,7 @@
 
   img {
     border-radius: 0 25px 25px 0;
-
+    height: 100%;
   }
   .carTitle {
     position: absolute;
@@ -145,6 +158,11 @@
     line-height: 60px;
     color: #FFFFFF;
     max-width: 487px;
+    @media screen and (max-width: 1350px) {
+      font-size: 25px;
+      line-height: 30px;
+      max-width: 250px;
+    }
   }
 
   .price {
@@ -169,5 +187,8 @@
 
 .carImageSlider {
   height: 860px;
+  @media screen and (max-width: 1350px) {
+    height: 500px;
+  }
 }
 

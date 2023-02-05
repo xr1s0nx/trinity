@@ -24,7 +24,9 @@ function Offers() {
     return (
         <section className={styles.offers}>
             <div className={styles.tabs}>
-                {tabs.map(tab => <button onClick={() => changeTab(tab)} className={tab === activeTab ? `${styles.tab} ${styles.active}` : styles.tab}><p>{tab}</p></button>)}
+                <div className={styles.overflow}>
+                    {tabs.map(tab => <button onClick={() => changeTab(tab)} className={tab === activeTab ? `${styles.tab} ${styles.active}` : styles.tab}><p>{tab}</p></button>)}
+                </div>
             </div>
             <div className={styles.offersWrap}>
                 {offers.map((item, i) => {
